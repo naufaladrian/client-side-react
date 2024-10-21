@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* table */
+tr,
+td,
+th {
+  @apply border-collapse border-b border-slate-400 py-2 px-4
+}
+
+/* button customize */
+.btn-primary {
+  @apply py-2 px-5 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-75
+}
+
+.btn-danger {
+  @apply py-2 px-5 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring focus:ring-red-400 focus:ring-opacity-75
+}
+
+.btn-warning {
+  @apply py-2 px-5 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-400 focus:ring-opacity-75
+}
+
+.btn-success {
+  @apply py-2 px-5 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-400 focus:ring-opacity-75
+}
+
+/* modal style */
+.modal-overlay {
+  @apply fixed w-full h-full bg-black/50 top-0 left-0 justify-center items-center
+}
+
+.modal {
+  @apply bg-white p-5 rounded-lg w-80 max-w-full
+}
+
+/* input */
+input {
+  @apply border border-slate-400 rounded-lg p-2
+}
